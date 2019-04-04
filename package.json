@@ -1,0 +1,25 @@
+{
+  "name": "coursera-exercise",
+  "version": "1.0.0",
+  "description": "Coursera exercise for the Hong Kong University course",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolandsze/coursera-exercise-hku-course.git"
+  },
+  "author": "Roland Szecsenyi",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}
