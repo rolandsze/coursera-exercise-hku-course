@@ -39,9 +39,11 @@
         </div>
 
         <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
-                </span>
+            <!-- Login modal trigger -->
+            <a href="#!" id="login-modal-trigger">
+                <span class="fa fa-sign-in"></span> Login
+            </a>
+        </span>
     </div>
 </nav>
 
@@ -194,10 +196,8 @@
             </div>
 
             <div class="col-12 col-sm-3 align-self-center">
-                <!-- Reserve table button -->
-                <a class="btn btn-block nav-link btn-warning"
-                   data-toggle="modal"
-                   data-target="#reserveATableModal">
+                <!-- Reserve table trigger -->
+                <a class="btn btn-block nav-link btn-warning" id="reserve-table-trigger">
                     Reserve Table
                 </a>
             </div>
@@ -416,19 +416,33 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap bundle with Popper.js -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 <!-- Carousel controls -->
 <script>
-    $("#carousel-button").click(function(){
+    $("#carousel-button").click(function () {
         if ($("#carousel-button").children("span").hasClass('fa-pause')) {
             $("#carousel").carousel('pause');
             $("#carousel-button").children("span").removeClass('fa-pause');
             $("#carousel-button").children("span").addClass('fa-play');
-        }
-        else if ($("#carousel-button").children("span").hasClass('fa-play')){
+        } else if ($("#carousel-button").children("span").hasClass('fa-play')) {
             $("#carousel").carousel('cycle');
             $("#carousel-button").children("span").removeClass('fa-play');
             $("#carousel-button").children("span").addClass('fa-pause');
         }
+    });
+</script>
+
+<!-- Login modal -->
+<script>
+    $("#login-modal-trigger").click(function () {
+        $('#loginModal').modal('show');
+    });
+</script>
+
+<!-- Reserve table modal -->
+<script>
+    $("#reserve-table-trigger").click(function () {
+        $('#reserveATableModal').modal('show');
     });
 </script>
 </body>

@@ -4,6 +4,7 @@ $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
 $carousel-item-height: 300px;
+$color-floralwhite: #FFFFFF;
 
 // Mixins
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
@@ -84,4 +85,20 @@ body {
   position: absolute;
   bottom: 0;
   z-index: 1;
+}
+
+// Modal header
+.modal-header {
+  background: $background-dark;
+  color: $color-floralwhite;
+
+  // Close button
+  .close {
+    color: $color-floralwhite;
+  }
+}
+
+// Modal body
+.modal-body {
+  background: $background-pale;
 }
