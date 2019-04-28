@@ -31,6 +31,13 @@ body {
     min-height: 300px;
 }
 
+#carousel-button {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
 /* Footer */
 .footer {
     background-color: #d1c4e9;
